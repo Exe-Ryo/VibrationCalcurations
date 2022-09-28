@@ -5,8 +5,8 @@ import os
 
 def page1():
   st.title("加振_入力振動比較")
-  path1 = st.text_input("CSVファイルパスを入力 Part1", "//tec-hls08/モータ評価/★PJT開発(Name_YYMM_内容)/土井_2205_966K_OTS_ランダム加振/02_試験データ/03_データ・解析（MG1_動力線あり）/Output/【左右】1G[[10~2000]]_Power.csv")
-  path2 = st.text_input("CSVファイルパスを入力 Part1", "//tec-hls08/モータ評価/★PJT開発(Name_YYMM_内容)/土井_2205_966K_OTS_ランダム加振/02_試験データ/04_データ・解析（MG1_動力線なし）/Output/【左右】1G[[10~2000]]_Power.csv")
+  path1 = st.text_input("CSVファイルパスを入力 Part1", "ファイルパス")
+  path2 = st.text_input("CSVファイルパスを入力 Part1", "ファイルパス")
   
   if st.button("CSVファイルを読み込み"):
     if os.path.isfile(path1) and os.path.isfile(path2):
